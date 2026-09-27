@@ -17,7 +17,7 @@ COACHTECH お問い合わせフォーム
 1. リポジトリのクローン
 
 ```bash
-git clone <リポジトリURL>
+git clone https://github.com/kakeru1538/contact-form-app.git
 cd contact-form-app
 ```
 
