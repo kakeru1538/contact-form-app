@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\SearchContactRequest;
+use App\Http\Requests\IndexContactRequest;
 use App\Models\Category;
 use App\Models\Contact;
 use App\Models\Tag;
@@ -10,7 +10,7 @@ use App\Models\Tag;
 class AdminController extends Controller
 {
     // お問い合わせ一覧を表示する。
-    public function index(SearchContactRequest $request)
+    public function index(IndexContactRequest $request)
     {
         $query = Contact::with(['category', 'tags']);
 

@@ -38,13 +38,13 @@ class UpdateContactRequest extends FormRequest
             'email.required' => 'メールアドレスを入力してください',
             'email.email' => 'メールアドレスは正しい形式で入力してください',
             'tel.required' => '電話番号を入力してください',
-            'tel.regex' => '電話番号は10〜11桁の数字で入力してください',
+            'tel.regex' => '電話番号はハイフンなしの10〜11桁で入力してください',
             'address.required' => '住所を入力してください',
             'category_id.required' => 'カテゴリーを選択してください',
-            'category_id.exists' => '選択したカテゴリーは存在しません',
+            'category_id.exists' => '選択されたカテゴリーが存在しません',
             'detail.required' => 'お問い合わせ内容を入力してください',
             'detail.max' => 'お問い合わせ内容は120文字以内で入力してください',
-            'tag_ids.*.exists' => '選択したタグは存在しません',
+            'tag_ids.*.exists' => '選択されたタグが存在しません',
         ];
     }
 }
